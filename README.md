@@ -4,6 +4,10 @@
 
 An Online Test Platform for Students preparing for IIT and Medicals
 
+# Want to contribute?
+
+See [contributing guidelines](CONTRIBUTING.md).
+
 # Project Funded By
 
 This Open Source Project is funded by [Shiksha Plus IIT and Medical Academy](https://shikshaplusonline.com).
