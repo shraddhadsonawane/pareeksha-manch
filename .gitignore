@@ -1,1 +1,4 @@
 .idea
+.vagrant
+vm_provisioning/ssh/id_rsa
+vm_provisioning/ssh/id_rsa.pub
