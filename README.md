@@ -7,7 +7,7 @@ An Online Test Platform for Students preparing for IIT and Medicals
 # Want to contribute?
 
 - See [contributing guidelines](CONTRIBUTING.md)
-- Get your [development setup ready](DEVELOPMENT.md)
+- Get your [development setup ready](development/README.md)
 
 # Project Funded By
 
