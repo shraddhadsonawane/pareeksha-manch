@@ -7,5 +7,8 @@
   ERROR:  Error installing pg:
             ERROR: Failed to build gem native extension.
   ```
-  
+- [Address already in use - bind(2) for "0.0.0.0" port 3000 (Errno::EADDRINUSE)](issues/address-already-in-use.md)
+  ```
+  Address already in use - bind(2) for "0.0.0.0" port 3000 (Errno::EADDRINUSE)
+  ```
   
