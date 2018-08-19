@@ -64,4 +64,5 @@
   ```bash
   Welcome to the Pareeksha Manch Project Development!
   ```
+  Check my [`vagrant up` logs](https://gist.github.com/nisusam/49622102b7d4ea8661317fb311714e74).
 - All The Best :thumbsup:. Happy Developement!
