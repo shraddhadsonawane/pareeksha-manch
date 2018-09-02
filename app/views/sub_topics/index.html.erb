@@ -17,7 +17,7 @@
       <tr>
         <td><%= sub_topic.title %></td>
         <td><%= sub_topic.description %></td>
-        <td><%= sub_topic.topic %></td>
+        <td><%= sub_topic.topic.title %></td>
         <td><%= link_to 'Show', sub_topic %></td>
         <td><%= link_to 'Edit', edit_sub_topic_path(sub_topic) %></td>
         <td><%= link_to 'Destroy', sub_topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>

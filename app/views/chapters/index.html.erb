@@ -17,7 +17,7 @@
       <tr>
         <td><%= chapter.title %></td>
         <td><%= chapter.description %></td>
-        <td><%= chapter.book %></td>
+        <td><%= chapter.book.title %></td>
         <td><%= link_to 'Show', chapter %></td>
         <td><%= link_to 'Edit', edit_chapter_path(chapter) %></td>
         <td><%= link_to 'Destroy', chapter, method: :delete, data: { confirm: 'Are you sure?' } %></td>

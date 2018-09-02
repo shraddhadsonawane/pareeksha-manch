@@ -12,8 +12,38 @@
 
 <p>
   <strong>Book:</strong>
-  <%= @chapter.book %>
+  <%= @chapter.book.title %>
 </p>
 
 <%= link_to 'Edit', edit_chapter_path(@chapter) %> |
 <%= link_to 'Back', chapters_path %>
+
+<br><br>
+
+<% if @chapter.topics.any? %>
+  <h3><%= @chapter.title %> Topics</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @chapter.topics.each do |topic| %>
+        <tr>
+          <td><%= chapter.title %></td>
+          <td><%= link_to 'Show', topic %></td>
+          <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+          <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<br><br>
+
+<%= link_to 'New Topic', new_topic_path %>

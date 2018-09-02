@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :chapter_id %>
-    <%= f.text_field :chapter_id %>
+    <%= f.select :chapter_id, options_for_select(Chapter.all.collect{ |c| [c.title, c.id] }, topic.chapter_id) %>
   </div>
 
   <div class="actions">

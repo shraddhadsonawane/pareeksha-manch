@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :topic_id %>
-    <%= f.text_field :topic_id %>
+    <%= f.select :topic_id, options_for_select(Topic.all.collect{ |t| [t.title, t.id] }, sub_topic.topic_id) %>
   </div>
 
   <div class="actions">
