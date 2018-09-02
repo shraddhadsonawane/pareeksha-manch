@@ -3,7 +3,7 @@
 ## Section 1: Installation
 
 - Install appropriate Linux distro in your Laptop (Dumb box or Dabba). [Ubuntu](https://www.ubuntu.com/download/desktop) preferred.   
-  We are using [Ubuntu Bionic Beaver (18.04 / 64Bit)](https://wiki.ubuntu.com/BionicBeaver) for developement.
+  We are using [Ubuntu Bionic Beaver (18.04 / 64Bit)](https://wiki.ubuntu.com/BionicBeaver) for development.
 - Install [Ruby and Ruby on Rails as per this guidelines](https://gorails.com/setup/ubuntu/18.04).
 - Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
   We are using version `5.2.18`.
@@ -41,7 +41,7 @@
   ```bash
   cd pareeksha-manch  
   ```
-- Setup your SSH keys for developement
+- Setup your SSH keys for development
   ```bash
   cp ~/.ssh/id_rsa vm_provisioning/ssh/
   cp ~/.ssh/id_rsa.pub vm_provisioning/ssh/
@@ -60,9 +60,9 @@
   ```bash
   vagrant up  
   ```
-- When you see below message at the end of above step, then only you are ready to start developement :wink:
+- When you see below message at the end of above step, then only you are ready to start development :wink:
   ```bash
   Welcome to the Pareeksha Manch Project Development!
   ```
   Check my [`vagrant up` logs](https://gist.github.com/nisusam/49622102b7d4ea8661317fb311714e74).
-- All The Best :thumbsup:. Happy Developement!
+- All The Best :thumbsup:. Happy Development!

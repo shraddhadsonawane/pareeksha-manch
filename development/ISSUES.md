@@ -1,4 +1,4 @@
-# Issues you might face during developement setup
+# Issues you might face during development setup
 
 **NOTE**: Consider using [Development Issue Template](dev-issue-template.md).
 
@@ -13,4 +13,3 @@
   ```
   Address already in use - bind(2) for "0.0.0.0" port 3000 (Errno::EADDRINUSE)
   ```
-  
