@@ -1,6 +1,10 @@
 .idea
 .vagrant
+.DS_Store
+config/database.yml
+config/secrets.yml
+db/*.sqlite3
+log/*.log
+tmp/
 vm_provisioning/ssh/id_rsa
 vm_provisioning/ssh/id_rsa.pub
-log/*.log
-/tmp
