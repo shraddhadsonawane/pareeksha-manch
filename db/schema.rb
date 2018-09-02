@@ -10,12 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180825110247) do
+ActiveRecord::Schema.define(version: 20180902102632) do
+
+  create_table "books", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.text     "author"
+    t.integer  "subject_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["subject_id"], name: "index_books_on_subject_id"
+  end
+
+  create_table "chapters", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "book_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["book_id"], name: "index_chapters_on_book_id"
+  end
+
+  create_table "sub_topics", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "topic_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["topic_id"], name: "index_sub_topics_on_topic_id"
+  end
 
   create_table "subjects", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "chapter_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["chapter_id"], name: "index_topics_on_chapter_id"
   end
 
   create_table "users", force: :cascade do |t|
