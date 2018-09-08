@@ -21,10 +21,11 @@
     <%= f.text_area :description %>
   </div>
 
-  <div class="field">
-    <%= f.label :book_id %>
-    <%= f.select :book_id, options_for_select(Book.all.collect{ |b| [b.title, b.id] }, chapter.book_id) %>
-  </div>
+  <%= f.hidden_field :book_id, value: params[:book_id] %>
+<!--   <div class="field">
+    <%#= f.label :book_id %>
+    <%#= f.select :book_id, options_for_select(Book.all.collect{ |b| [b.title, b.id] }, chapter.book_id) %>
+  </div> -->
 
   <div class="actions">
     <%= f.submit %>

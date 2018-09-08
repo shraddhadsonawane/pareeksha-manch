@@ -34,9 +34,9 @@
     <tbody>
       <% @chapter.topics.each do |topic| %>
         <tr>
-          <td><%= chapter.title %></td>
+          <td><%= topic.title %></td>
           <td><%= link_to 'Show', topic %></td>
-          <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+          <td><%= link_to 'Edit', edit_chapter_topic_path(topic.chapter, topic) %></td>
           <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
@@ -46,4 +46,4 @@
 
 <br><br>
 
-<%= link_to 'New Topic', new_topic_path %>
+<%= link_to 'New Topic', new_chapter_topic_path(@chapter.id) %>

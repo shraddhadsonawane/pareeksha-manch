@@ -25,7 +25,8 @@ class SubTopicsController < ApplicationController
   # POST /sub_topics
   # POST /sub_topics.json
   def create
-    @sub_topic = SubTopic.new(sub_topic_params)
+    topic = Topic.find(sub_topic_params[:topic_id])
+    @sub_topic = topic.sub_topics.build(sub_topic_params)
 
     respond_to do |format|
       if @sub_topic.save

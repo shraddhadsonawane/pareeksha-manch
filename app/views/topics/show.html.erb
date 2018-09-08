@@ -36,7 +36,7 @@
         <tr>
           <td><%= sub_topic.title %></td>
           <td><%= link_to 'Show', sub_topic %></td>
-          <td><%= link_to 'Edit', edit_sub_topic_path(sub_topic) %></td>
+          <td><%= link_to 'Edit', edit_topic_sub_topic_path(sub_topic.topic, sub_topic) %></td>
           <td><%= link_to 'Destroy', sub_topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
@@ -46,4 +46,4 @@
 
 <br><br>
 
-<%= link_to 'New Sub Topic', new_sub_topic_path %>
+<%= link_to 'New Sub Topic', new_topic_sub_topic_path(@topic.id) %>

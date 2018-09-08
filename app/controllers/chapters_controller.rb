@@ -25,7 +25,8 @@ class ChaptersController < ApplicationController
   # POST /chapters
   # POST /chapters.json
   def create
-    @chapter = Chapter.new(chapter_params)
+    book = Book.find(chapter_params[:book_id])
+    @chapter = book.chapters.build(chapter_params)
 
     respond_to do |format|
       if @chapter.save

@@ -26,10 +26,11 @@
     <%= f.text_area :author %>
   </div>
 
-  <div class="field">
-    <%= f.label :subject_id %>
-    <%= f.select :subject_id, options_for_select(Subject.all.collect{ |s| [s.name, s.id] }, book.subject_id) %>
-  </div>
+  <%= f.hidden_field :subject_id, value: params[:subject_id] %>
+<!--   <div class="field">
+    <%#= f.label :subject_id %>
+    <%#= f.select :subject_id, options_for_select(Subject.all.collect{ |s| [s.name, s.id] }, book.subject_id) %>
+  </div> -->
 
   <div class="actions">
     <%= f.submit %>

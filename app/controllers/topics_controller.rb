@@ -25,7 +25,8 @@ class TopicsController < ApplicationController
   # POST /topics
   # POST /topics.json
   def create
-    @topic = Topic.new(topic_params)
+    chapter = Chapter.find(topic_params[:chapter_id])
+    @topic = chapter.topics.build(topic_params)
 
     respond_to do |format|
       if @topic.save
